@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service HealthCheckService {
+  rpc CheckSecurity (SecurityRequest) returns (SecurityResponse);
+}
+
+message SecurityRequest {
+  repeated string packages = 1;
+}
+
+message SecurityResponse {
+  repeated string security_check_result = 1;
+}
