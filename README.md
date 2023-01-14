@@ -8,13 +8,23 @@ Welcome to BlindSpot Home Assignment
 - python
 - GitHub personal access token
 
-## SetUp
 
 ### Configure access token 
 
 To run the healthy service you will need first to add your personal access token to the healthy config.ini file.
 
 Go to `healthy/config.ini` and add your token under 'GitHub' section and token key.
+
+### Install dependencies 
+
+```bash
+cd healthy && pip install -r requirements.txt 
+```
+
+```bash
+cd resty && pip install -r requirements.txt 
+```
+
 
 ### Run unit tests  
 
